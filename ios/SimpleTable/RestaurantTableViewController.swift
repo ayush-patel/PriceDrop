@@ -59,7 +59,7 @@ class RestaurantTableViewController: UITableViewController {
         return cell
     }
    
-    override func tableView(_ tableVied: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var url : URL?
         
         switch indexPath.section{

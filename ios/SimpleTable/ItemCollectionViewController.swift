@@ -298,16 +298,17 @@ class ItemCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    func CollectionView(_ CollectionVied: UICollectionView, didSelectRowAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectRowAt indexPath: IndexPath) {
         var url : URL?
         
         switch indexPath.section{
         case 0:
             switch indexPath.row{
-            case 1: break
+
             case 0:
                 url = URL(string: "https://www.francescas.com")
                 break
+            case 1: break
             case 2:
                 url = URL(string: "http://www.prada.com/en.html?cc=US")
                 break
@@ -327,15 +328,15 @@ class ItemCollectionViewController: UICollectionViewController {
                 return;
             }
             
-            //        case 1:
-            //            switch indexPath.row{
-            //            case 0:
-            //                url = URL(string: "https://www.google.com/")
-            //            case 1:
-            //                url = URL(string: "https://www.google.com/")
-            //            default:
-            //                return;
-        //            }
+                    case 1:
+                        switch indexPath.row{
+                        case 0:
+                            url = URL(string: "https://www.google.com/")
+                        case 1:
+                            url = URL(string: "https://www.google.com/")
+                        default:
+                            return;
+                    }
         default:
             return;
         }
